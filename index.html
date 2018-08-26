@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <title>Pig Dice</title>
+  <link rel="stylesheet" href="css/bootstrap.css">
+  <link rel="stylesheet" href="css/styles.css">
+  <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+  <script src="js/bootstrap.js"></script>
+  <script src="js/scripts.js"></script>
+</head>
+
+<body>
+  <div class="container">
+    <div class="jumbotron">
+      <h1>PIG DICE</h1>
+    </div>
+    <div class="well">
+      <p>Whether you are stuck in a waiting room, needing entertainment at a restaurant, or looking for a simple game while on vacation, Pig is the perfect way to pass the time with family. And all you need is one six-sided die and a way to keep score.</p>
+    </div>
+    <div class="init-hide">
+      <button type="button" class="btn btn-primary btn-lg">Game Rules</button>
+    </div>
+    <div class="init-show">
+      <p>Each turn, a player repeatedly rolls a die until either a 1 is rolled or the player decides to "hold":</p>
+      <ul>
+        <li>If the player rolls a 1, they score nothing and it becomes the next player's turn.</li>
+        <li>If the player rolls any other number, it is added to their turn total and the player's turn continues.</li>
+        <li>If a player chooses to "hold", their turn total is added to their score, and it becomes the next player's turn.</li>
+      </ul>
+      <p>The first player to score 100 or more points wins.</p>
+      <button type="button" class="btn btn-primary btn-lg">Hide Rules</button>
+    </div>
+    <br>
+    <!-- <br> -->
+    <div class="panel panel-default text-center">
+      <h2>Player 1</h2>
+      <div>
+        <span id="scoreBoard">0</span>
+      </div>
+      <button type="button" class="btn-player1">Player1-Roll</button>
+      <button type="button" class="btn-player1">Player1-Hold</button>
+      <h2>Dice Roll: <span id="die-roll-1"></span></h2>
+      <p>Round Total: <span id="round-total-1"></span></p>
+      <p>Total Score: <span id="total-score-1"></span></p>
+    </div>
+    <div class="panel panel-default text-center">
+      <h2>Player 2</h2>
+      <div>
+        <span id="scoreBoard">0</span>
+      </div>
+      <button type="button" class="btn-player2">Player2-Roll</button>
+      <button type="button" class="btn-player2">Plater2-Hold</button>
+      <h2>Dice Roll: <span id="die-roll-2"></span></h2>
+      <p>Round Total: <span id="round-total-2"></span></p>
+      <p>Total Score: <span id="total-score-2"></span></p>
+    </div>
+      <!-- <button type="button" class="btn btn-primary btn-lg">New game</button> -->
+
+  </div>
+</body>
+
+</html>
